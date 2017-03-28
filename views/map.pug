@@ -2,7 +2,7 @@ extends layout.pug
 
 block content
 	// TOP NAVIGATION
-	nav.topNav
+	nav.topNav.mapNav
 		a(href='/')
 			img.logoTopNav(src='images/logo_dark.svg', alt='Textum Logo')
 		span.selected= selectedCountry
@@ -14,7 +14,8 @@ block content
 
 	#map
 	#footer
-		button.btn.btn-default.btn-back(type='submit') Go Back
+		a(href="/")
+			button.btn.btn-default.btn-back(type='submit') Go Back
 
 	script(type='text/javascript').
 		var locObj =!{JSON.stringify(locations)}
