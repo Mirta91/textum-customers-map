@@ -1,0 +1,152 @@
+html{
+	background-color: #292929;	
+}
+.title{
+	color:#fff;
+	font-family: 'Lucida Sans Std Roman', sans-serif;	
+	text-align: center;
+	font-size:1.6em;
+}
+#wrapper{
+	background-color: #292929;	
+}
+
+nav.topNav{
+  width: 100vw;
+  border-bottom: 1px solid #b5152b;
+  overflow: hidden; 
+  background: #fff;
+}
+
+.topNav ul{
+  padding-right:20px;
+  float:right;
+  margin-bottom: 0px;
+}
+
+.topNav ul li{
+  display: inline-block;
+}
+
+.topNav ul li a{
+  font-size: 14px;
+  color: #292929;
+  text-decoration: none;
+  font-family: 'Lucida Sans Std Roman', sans-serif;
+  line-height: 67px;
+  display: block;
+   padding:0 10px;
+}
+
+.topNavVisible{
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease-in;
+     -moz-transition: opacity 0.3s ease-in;
+      -ms-transition: opacity 0.3s ease-in;
+       -o-transition: opacity 0.3s ease-in;
+          transition: opacity 0.3s ease-in;
+}
+
+.topNavHidden{
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in;
+     -moz-transition: opacity 0.3s ease-in;
+      -ms-transition: opacity 0.3s ease-in;
+       -o-transition: opacity 0.3s ease-in;
+          transition: opacity 0.3s ease-in;
+}
+
+.borderHover{
+  position: relative;
+  color: #999999;
+}
+
+.borderHover:before{
+  display: block;
+  width: 0;
+  height: 2px;
+  margin-left:-5%;
+  background-color: #b5152b;
+  content: "";
+  transition: width 0.5s;
+}
+
+.borderHover:hover{
+  color: #b5152b;
+  text-decoration: none;
+}
+
+.borderHover:hover:before{
+  width: 110%;
+}
+
+.logoTopNav{
+  float:left;
+  width:250px;
+  padding:10px;
+}
+
+
+
+
+.container{
+	margin-left:0 auto;
+	margin-right:0 auto;
+	padding:5%;
+}
+.container form{
+	background-color:#eee;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	width:50vw;
+	color:black;
+	padding:5%;
+	border:3px solid #fff;
+    border-radius: 3px;
+}
+.container label{
+	display:block;
+	color:#000;
+	text-align:left;
+	font-size:2em;
+	font-family: 'Lucida Sans Std Roman', sans-serif;
+	font-weight:normal;
+}
+.container select{
+	width:100%;
+	-webkit-appearance: menulist-button;
+	height:45px;
+	font-size:1.5em;
+	font-family: 'Lucida Sans Std Roman', sans-serif;
+}
+.container button{
+	text-align:center;	
+	height:45px;
+	font-size:1.5em;
+	font-family: 'Lucida Sans Std Roman', sans-serif;
+	background-color:#b5152b;
+	color:#fff;
+}
+.container button:hover{
+	background-color:#8b1425;
+	color:#fff;
+}
+
+@media (max-width: 700px) {
+  .container form{width:90vw;}
+}
+
+#map{
+	width:100vw;
+	height:100vh;
+}
+.selected{
+    position: relative;
+    top: 12px;
+    color:#b5152b;
+    font-weight:bold;
+    font-style: italic;
+    font-family:'Palatino', serif;
+}
+

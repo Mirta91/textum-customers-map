@@ -1,0 +1,53 @@
+extends layout.pug
+
+block content
+	// TOP NAVIGATION
+	nav.topNav
+		a(href='#home')
+			img.logoTopNav(src='images/logo_dark.svg', alt='Textum Logo')
+		span.selected Customer Map
+		ul#nav.pull-right
+			li
+				a.borderHover(href='index.php') HOME
+
+	div.container
+		form#countries(action='/country', method='post')
+			label Select country:
+			select(name='country' id='country')
+				option(value='') Country...
+				option(value='AT') Austria
+				option(value='BE') Belgium
+				option(value='BA') Bosnia &amp; Herzegovina
+				option(value='BG') Bulgaria
+				option(value='HR') Croatia
+				option(value='CZ') Czech Republic
+				option(value='DK') Denmark
+				option(value='EE') Estonia
+				option(value='FI') Finland
+				option(value='FR') France
+				option(value='DE') Germany
+				option(value='EL') Greece
+				option(value='HU') Hungary
+				option(value='IT') Italy
+				option(value='LI') Liechtenstein
+				option(value='LT') Lithuania
+				option(value='LU') Luxembourg
+				option(value='MK') Macedonia
+				option(value='ME') Montenegro
+				option(value='NL') Netherlands (Holland, Europe)
+				option(value='NO') Norway
+				option(value='PL') Poland
+				option(value='PT') Portugal
+				option(value='RO') Romania
+				option(value='RS') Serbia
+				option(value='SK') Slovakia
+				option(value='SI') Slovenia
+				option(value='ES') Spain
+				option(value='SE') Sweden
+				option(value='CH') Switzerland
+				option(value='TR') Turkey
+			br
+			br
+			button.btn.btn-default(type='submit') Submit
+
+			script(src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous")
