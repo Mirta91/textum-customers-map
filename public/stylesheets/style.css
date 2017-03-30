@@ -136,6 +136,31 @@ nav.topNav{
 	width:100vw;
 	height:80vh;
 }
+.circle{
+  display:inline-block;
+  width:20px;
+  height:20px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 1px;
+}
+.alert-message{
+  position:relative !important;
+  bottom:3px !important;
+  left:3px !important;
+}
+.alert-message-bold{
+  left:3px !important;
+  font-weight:bold !important; 
+  text-decoration:none;
+}
+.green{color: #6ea045 !important}
+.yellow{color: #cdbc50 !important}
+.red{color: #a94442 !important}
+
+.alert-message-bold:hover{
+  text-decoration:none;
+}
 #footer{
   height:8vh;
   background-color:#292929;

@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var addresses = require('../data/germany-test.json');
+var addresses = require('../data/germany-test2.json');
 var lupus = require('lupus');
 //var geocoder = require("../modules/geocoder.js");
 var fs = require('fs');
