@@ -9,20 +9,22 @@ html{
 }
 #wrapper{
 	background-color: #292929;
-  width:100vw;	
+    height:100vh;
 }
 
 nav.topNav{
-  width: 100vw;
   border-bottom: 1px solid #b5152b;
   overflow: hidden; 
   background: #fff;
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
 }
 
 .topNav ul{
   padding-right:20px;
   float:right;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .topNav ul li{
@@ -83,7 +85,7 @@ nav.topNav{
 
 .logoTopNav{
   float:left;
-  width:320px;
+  width:270px;
   padding:10px;
 }
 
@@ -92,16 +94,17 @@ nav.topNav{
 
 .content{
 	padding-top:5%;
-  width:100vw;
+    text-align: center;
 }
 .content form{
-  margin: 0 auto;
-	background-color:#eee;
+    margin: 0 auto;
 	width:80%;
+    position: relative;
 	color:black;
-	padding:5%;
-	border:3px solid #fff;
-  border-radius: 3px;
+    padding:5%;
+    border-radius: 3px;
+    vertical-align:middle;
+    height:500px;
 }
 .content label{
 	display:block;
@@ -119,12 +122,17 @@ nav.topNav{
 	font-family: 'Lucida Sans Std Roman', sans-serif;
 }
 .content button{
-	text-align:center;	
-	height:45px;
-	font-size:1.5em;
+	text-align:center;
+	font-size:2.5em;
+    padding:3% 5%;
 	font-family: 'Lucida Sans Std Roman', sans-serif;
 	background-color:#b5152b;
 	color:#fff;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .content button:hover{
 	background-color:#8b1425;
@@ -133,8 +141,7 @@ nav.topNav{
 
 
 #map{
-	width:100vw;
-	height:80vh;
+	height:100%;
 }
 .circle{
   display:inline-block;
@@ -162,7 +169,7 @@ nav.topNav{
   text-decoration:none;
 }
 #footer{
-  height:8vh;
+  height:2vh;
   background-color:#292929;
   text-align:center;
 }
@@ -179,16 +186,7 @@ nav.topNav{
 }
 
 @media (max-width: 768px) {
-  .content form{width:90%; margin-top:10%;}
-  .content label{font-size:3em;}
-  .content select{height:100px;font-size:2.5em;}
-  .content button{font-size:2.5em;height:80px;}
-  .logoTopNav{width:400px;}
   .topNav ul{display:none;}
-}
-@media (max-width:600px){
-  .mapNav{display:none;}
-  #map{height:90vh;}
-  #footer{height:5vh;}
-  .btn-back{margin-top:10px;}
+    .mapNav{display:none;}
+    #map{height:100vh;}
 }

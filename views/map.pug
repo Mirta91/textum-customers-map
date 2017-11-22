@@ -5,18 +5,12 @@ block content
 	nav.topNav.mapNav
 		a(href='/')
 			img.logoTopNav(src='images/logo_dark.svg', alt='Textum Logo')
-		span.selected= selectedCountry
+		span.selected Customer Map
 		ul#nav.pull-right
 			li
 				a.borderHover(href='index.php') HOME
 
-	//h1.title= selectedCountry
-
 	#map
-	#footer
-		a(href="/")
-			button.btn.btn-default.btn-back(type='submit') Go Back
-
 	script(type='text/javascript').
 		var locObj =!{JSON.stringify(locations)}
 	script(src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous")
